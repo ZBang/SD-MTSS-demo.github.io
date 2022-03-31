@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="py-4" style='font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;'>
+<!-- <body class="py-4" style='font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;'>
   <div class="container">
 
     <h1 class='display-3'> <span class='text-warning'>AISHELL-3 Corpus:</span><br/> Baseline System Samples</h1>
@@ -383,6 +383,73 @@
 
   </div>
 
+</body> -->
+<body>
+  <div>
+  	<h2>Unofficial implementation result of Google AI's <a href="https://google.github.io/speaker-id/publications/VoiceFilter/">VoiceFilter system</a></h2>
+  	<p><b>Implementation GitHub repo link:</b> <a href="https://github.com/mindslab-ai/voicefilter">mindslab-ai/voicefilter</a></p>
+  	<p><b>Original Paper:</b> <a href="https://arxiv.org/abs/1810.04826">arXiv</a></p>
+
+    <p>In summary, VoiceFilter isolates the voice of a desired speaker from noisy input, given the prior of that speaker.
+    This helps reducing word error rate(WER) of speech recognition system.
+    </p>
+    <table>
+      <thead>
+        <tr>
+          <th>mixture</th>
+          <th>aux_s1</th>
+          <th>aux_s2</th>
+          <th>est_s1(pre-trained)</th>
+          <th>est_s1(MTSS-unbind)</th>
+          <th>est_s1(MTSS-bind)</th>
+          <th>est_s2(pre-trained)</th>
+          <th>est_s2(MTSS-unbind)</th>
+          <th>est_s2(MTSS-bind)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/mixed.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/ref-voice.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/estimated.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/target.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/trumpclinton-cut.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/clinton-sample.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/clinton-out.wav" type="audio/wav"></audio></td>
+          <td><div align="center">None</div></td>
+        </tr>
+        <tr>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/simahn-cut.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/sim-sample.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/sim-out-2-norm.wav" type="audio/wav"></audio></td>
+          <td><div align="center">None</div></td>
+        </tr>
+        <tr>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/simahn-cut.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/ahn-sample.wav" type="audio/wav"></audio></td>
+          <td><audio controls class="audio-player" preload="metadata">
+              <source src="audios/ahn-out-2-norm.wav" type="audio/wav"></audio></td>
+          <td><div align="center">None</div></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>All details are shown in GitHub repository's README. Thank you!</p>
+    <p>Implementation author: <a href="http://swpark.me">Seungwon Park</a> at <a href="https://mindslab.ai">MINDsLab</a> </p>
+  </div>
 </body>
 
 
