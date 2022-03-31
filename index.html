@@ -21,7 +21,7 @@
     <h1 class='display-3'> <span class='text-warning'>Audio Demo</span><br/> MTSS</h1>
     
     <br/>
-    <h2>Input Audio(8kHz)</h2>
+    <h2>1. Input Audio(8kHz)</h2>
 
     <div class="row mb-3">
       <div class="col-md-3 audio-box">
@@ -74,9 +74,10 @@
     </div>
     
     
-    <h2>Inference Results</h2>
+    <h2>2. Inference Results</h2>
     
-    <h3>est_s1</h3>
+    <h3>2.1 est_s1</h3>
+    <p>Audio</p>
     <div class="row mb-3">
       <div class="col-md-3 audio-box">
         wav_id
@@ -127,8 +128,23 @@
       <div class="col-md-3 audio-box"><audio controls="controls"><source src="MTSS-bind/s1/22ga010i_0.28655_051o020s_-0.28655_22gc010x.wav" autoplay /></audio></div>     
     </div>
     
+   <p>Spectrogram</p>
+    <figure class='figure'>
+        <img src="spec.png" class="figure-img img-fluid rounded" />
+<!--         <figcaption class='figure-caption'>
+          Speaker embedding visualization using t-SNE, 
+          embeddings extracted from audio recordings are represented with dots, synthesized with crosses. 
+          From left to right: 
+          (A) validation-set recordings; 
+          (B) validation-set recordings & synthesized; 
+          (C) test-set recordings; 
+          (D) test-set recordings & synthesized. 
+          Please note that the validation set contains seen speakers while the test-set only includes unseen ones.
+        </figcaption> -->
+    </figure>
     
-   <h3>est_s2</h3>
+   <h3>2.2 est_s2</h3>
+    <p>Audio</p>
     <div class="row mb-3">
       <div class="col-md-3 audio-box">
         wav_id
@@ -180,9 +196,9 @@
     </div>
 
 
-<h3>Speaker Similarity</h3>
+<p>Spectrogram</p>
     <figure class='figure'>
-        <img src="spec.png" class="figure-img img-fluid rounded" />
+        <img src="spec_s2.png" class="figure-img img-fluid rounded" />
 <!--         <figcaption class='figure-caption'>
           Speaker embedding visualization using t-SNE, 
           embeddings extracted from audio recordings are represented with dots, synthesized with crosses. 
